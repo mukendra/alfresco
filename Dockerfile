@@ -4,6 +4,7 @@ run sudo apt-get update && apt-get -y upgrade
 run apt-get purge openjdk-*
 run apt-get install -y wget git tar unzip nano
 run mkdir /opt/alfresco
+run apt-get install -y mysql-client
 
 
 #JDK 1.7u67
