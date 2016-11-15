@@ -1,0 +1,26 @@
+mode=unattended
+enable-components=javaalfresco,libreofficecomponent,alfrescowcmqs
+disable-components=postgres
+
+# Install location
+prefix=/opt/alfresco-community
+
+alfresco_admin_password=admin
+
+# Don't install Tomcat
+#tomcat_installation_type=existing
+
+# If embedded MySQL is being used, then a password must be specified
+# or user input will be required
+#mysql_password=aaa
+#mysql_installation_type=existing
+
+# Use JDBC settings for an existing database
+jdbc_url=jdbc:mysql://192.168.1.63:3306/test2
+jdbc_driver=com.mysql.jdbc.Driver 
+jdbc_database=test2
+jdbc_username=test2
+jdbc_password=root
+
+# Don't install init scripts
+baseunixservice_install_as_service=0
